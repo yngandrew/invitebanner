@@ -10,8 +10,8 @@ client.on('message', msg => {
   if(msg.content.startsWith('discord.gg')) {
     const user = msg.author
     msg.member.ban(user)
-    msg.channel.send("${user} a fost banat, nu ai voie sa trimit invite uri!");
+    msg.channel.send("${user} has been banned, you are not allowed to send invites in this guild!");
   }
 })
 
-client.login('Nzc4NTc1NTY3MDU3NzE1MjAw.X7T_AA.NlQT_g81GYZMoNzzvysi65JHP6s');
+client.login('token');
